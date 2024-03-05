@@ -1,0 +1,94 @@
+//variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 200 to 900
+body {
+    font-family: "Inconsolata";
+    background-image: url(../../public/assets/images/_03b98273-8b40-452d-a407-e924a53208e9.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    color: $white;
+}
+
+.card-project {
+    box-shadow: 16px 0 16px rgba(0, 0, 0, .5);
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+
+.card-project img{
+    transition: all 500ms ease-in-out;
+}
+
+.card-project:hover img {
+    transition: all 500ms ease-in-out;
+    transform: scale(1.05);
+}
+
+.card-project_image-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    overflow: hidden;
+}
+
+.card-project_shadow {
+    width: 24px;
+    height: 100%;
+    margin-left: -24px;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    box-shadow: 16px 0 16px rgba(0, 0, 0, .5);
+}
+
+.active{
+    color: red !important;
+}
+
+.welcome-container{
+    background-color: rgba(0, 0, 0, 0.701);
+}
+
+.welcome{
+    min-height: 94dvh;
+}
+
+.project-image{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.project-box{
+    transition: all 300ms;
+}
+
+.project-box:hover{
+    background-color: white;
+    color: black;
+
+    button{
+        background-color: $dark;
+        color: white;
+    }
+
+    button:hover{
+        background-color: rgba($color: #222222, $alpha: 1.0);
+    }
+}
